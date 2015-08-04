@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Skip Showers for Beef</title>
+    <meta name="description" content="Skip Showers for Beef">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/framework.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+	<header>
+		<div class="wrapper clearfix">
+			<div class="one_fourth remove_bottom logo">
+				<a href="index.html">
+                    <div class="logo-holder"></div>
+					<!-- <img src="img/logo.png" alt="logo" class="retina" /> -->
+				</a>
+			</div><!--/one_fourth-->
+			<div class="three_fourths remove_bottom last">
+				<nav>
+					<ul id="selectnav">
+<!-- 						<li>
+							<a href="#home" class="scroller active">Home</a>
+						</li> -->
+						<li>
+							<a href="#portfolio" class="scroller">What We Do</a>
+						</li>
+						<li>
+							<a href="#services" class="scroller">Learn More</a>
+						</li>
+						<li>
+							<a href="#team" class="scroller">Our Message</a>
+						</li>
+						<li>
+							<a href="#contact" class="scroller">Pledge</a>
+						</li>
+                        <li class="header-socials">
+                            <a href="http://www.twitter.com/skipshowers" target="_blank"><i class="fa fa-twitter"><span class="mobile-hide">Twitter</span></i></a>                        
+                        <li class="header-socials">
+                            <a href="https://www.facebook.com/skipshowersforbeef" target="_blank"><i class="fa fa-facebook"><span class="mobile-hide">Facebook</span></i></a>
+                        </li>
+                        <li class="header-socials">
+                            <a href="https://www.youtube.com/channel/UCZ9TCGGwK8V5UBCCBnKCkKQ/videos" target="_blank"><i class="fa fa-youtube-play"><span class="mobile-hide">Youtube</span></i></a>
+                        </li>
+					</ul>
+				</nav>
+			</div><!--/three_fourths-->
+		</div><!--/wrapper-->
+	</header><!--/header-->
+	
+	<section class="full" id="home" style="height: auto !important;">
+
+	<script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            var _CaptionTransitions = [];
+            _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["R"] = { $Duration: 900, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["T"] = { $Duration: 900, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["B"] = { $Duration: 900, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["ZMF|10"] = { $Duration: 900, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
+            _CaptionTransitions["RTT|10"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["RTT|2"] = { $Duration: 900, $Zoom: 3, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5} };
+            _CaptionTransitions["RTTL|BR"] = { $Duration: 900, x: -0.6, y: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["CLIP|LR"] = { $Duration: 900, $Clip: 15, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2 };
+            _CaptionTransitions["MCLIP|L"] = { $Duration: 900, $Clip: 1, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+            _CaptionTransitions["MCLIP|R"] = { $Duration: 900, $Clip: 2, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
+
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+    <!-- Jssor Slider Begin -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+    <div id="slider1_container">
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+            <div style="position: absolute; display: block;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+        </div>
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: grab; position: absolute; left: 0px; top: 0px; width: 1300px;
+            height:700px; overflow: hidden;">
+            <div>
+                <img u="image" src="img/slide1.jpg" />
+
+                <div class="slide-text first-slide">
+                        We Can Get Through<br>This Drought Together
+                </div>
+            </div>
+            <div>
+                <img u="image" src="img/slide2.jpg" />
+
+                <div class="slide-text">
+                        It Feels Good To Save Water
+                </div>
+            </div>
+            <div>
+                <img u="image" src="img/slide3.jpg" />
+
+                <div class="slide-text">
+                        Have Your Steak And Eat It Too
+                </div>
+            </div>
+            <div>
+                <img u="image" src="img/slide4.jpg" />
+
+                <div class="slide-text">
+                        Pledging Is Easy
+                </div>
+            </div>
+            <div>
+                <img u="image" src="img/slide5.jpg" />
+
+                <div class="slide-text">
+                        Join The <i>Moo</i>vement Today
+                </div>
+            </div>
+            <div>
+                <img u="image" src="img/slide6.jpg" />
+
+                <div class="slide-text">
+                        Just Skip It
+                </div>
+            </div>               
+        </div>
+                
+        <!--#region Bullet Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+        <style>
+            /* jssor slider bullet navigator skin 21 css */
+            /*
+            .jssorb21 div           (normal)
+            .jssorb21 div:hover     (normal mouseover)
+            .jssorb21 .av           (active)
+            .jssorb21 .av:hover     (active mouseover)
+            .jssorb21 .dn           (mousedown)
+            */
+            .jssorb21 {
+                position: absolute;
+            }
+            .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 19px;
+                height: 19px;
+                text-align: center;
+                line-height: 19px;
+                color: white;
+                font-size: 12px;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .jssorb21 div { background-position: -5px -5px; }
+            .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+            .jssorb21 .av { background-position: -65px -5px; }
+            .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+        </style>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"></div>
+        </div>
+        <!--#endregion Bullet Navigator Skin End -->
+        
+        <!--#region Arrow Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+        <style>
+            /* jssor slider arrow navigator skin 21 css */
+            /*
+            .jssora21l                  (normal)
+            .jssora21r                  (normal)
+            .jssora21l:hover            (normal mouseover)
+            .jssora21r:hover            (normal mouseover)
+            .jssora21l.jssora21ldn      (mousedown)
+            .jssora21r.jssora21rdn      (mousedown)
+            */
+            .jssora21l, .jssora21r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 55px;
+                height: 55px;
+                cursor: pointer;
+                overflow: hidden;
+            }
+            .jssora21l { background-position: -3px -33px; }
+            .jssora21r { background-position: -63px -33px; }
+            .jssora21l:hover { background-position: -123px -33px; }
+            .jssora21r:hover { background-position: -183px -33px; }
+            .jssora21l.jssora21ldn { background-position: -243px -33px; }
+            .jssora21r.jssora21rdn { background-position: -303px -33px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
+        </span>
+        <!--#endregion Arrow Navigator Skin End -->
+    </div>
+    <!-- Jssor Slider End -->
+
+	
+		<!-- <h1 class="mega">Welcome Traveller.<br />We are Tides.</h1> -->
+	
+	</section>
+	
+	<section class="small-padding" id="portfolio">
+	
+		<div class="wrapper">
+			<h3 class="floatleft">What We Do</h3>
+			
+			<div class="clear"></div><!--CLEAR FLOATS-->
+		</div>
+		
+	</section>
+	
+	<section class="dark-wrapper">
+	
+		<div class="wrapper overflow-hidden">
+		
+			<div class="one_half left scroll-animate">
+                <iframe class="video1" src="https://www.youtube.com/embed/D2-R72MYcZQ" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="one_half right last scroll-animate about-us-text">
+				<h2>About Us</h2>
+				<p class="video-text">SkipShowersForBeef.com is a nonprofit organization established during the historic California drought of 2015, aiming to support the beef industry with innovative eco-friendly practices. We aim to advocate water conservation, educate the public on drought awareness, and develop and disperse creative resources that promote environmentally responsible beef consumption. Is it real? You bet it is! <a href="#contact" class="pledge-link">Pledge</a> today!</p>
+			</div>
+			
+		</div>
+		
+	</section>
+	
+	<section class="small-padding" id="services">
+		
+		<div class="wrapper">
+			<h3 class="floatleft">Learn More</h3>
+			<div class="clear"></div><!--CLEAR FLOATS-->
+		</div>
+		
+	</section>
+	
+	<section class="dark-wrapper download-section">
+	
+		<div class="wrapper">
+			
+			<div class="one_half scroll-animate top  service-section first-one">
+				<center><a href="img/brochure.pdf" download class="download-link"><img src="img/cow.png" alt="" class="file image-download"></a></center>
+				<div class="break15"></div>
+				<h4 class="margin-bottom-10">Waterless Hygiene Guide</h4>
+                <p class="download-text">Just how does one skip showers? Is it even possible? We’ve put together a collection of practical tips and tricks in our “Waterless Hygiene Guide” to help guide your transition into your new shower-skipping lifestyle.</p>
+				<a href="img/brochure.pdf" download class="download-link"><div class="download-button">Download Brochure</div></a>
+			</div>
+			
+			<div class="one_half scroll-animate bottom last service-section second-one">
+				<center><a href="img/waterchart.pdf" download class="download-link"><img src="img/shower.png" alt="" class="file"></a></center>
+				<div class="break15"></div>
+				<h4 class="margin-bottom-10">Beef to Shower Breakdown</h4>
+                <p class="download-text">Skip exactly how many showers? We’ve put together this easy “Beef to Shower Breakdown” to help you crunch the numbers.</p>
+				<a href="img/waterchart.pdf" download class="download-link"><div class="download-button">Download Chart</div></a>
+			</div>
+			
+			<div class="clear"></div>
+			
+		</div>
+		
+	</section>
+	
+	<section class="small-padding" id="team">
+		
+		<div class="wrapper">
+			<h3 class="floatleft">Our Message</h3>
+			<div class="clear"></div><!--CLEAR FLOATS-->
+		</div>
+		
+	</section>
+	
+	<section class="dark-wrapper learn-more">
+	
+		<div class="wrapper">
+			
+			<div class="one_half left scroll-animate psa-text">
+				<h2>A Message To California</h2>
+				<p class="video-text">Our cause has grown to include some very special eco-conscious figures, including Grammy-nominated musician Moby. Check out this thoughtful video piece to find out just why you should join this incredible movement.</p>
+			</div>
+			<div class="one_half right last scroll-animate">
+                <iframe class="video1" src="https://www.youtube.com/embed/AmmUV324Lnk" frameborder="0" allowfullscreen></iframe>
+			</div>
+			
+		</div>
+		
+	</section>
+	
+	<section class="small-padding" id="contact">
+			
+		<div class="wrapper">
+			<h3 class="floatleft">Pledge</h3>
+			
+			<div class="clear"></div><!--CLEAR FLOATS-->
+		</div>
+		
+	</section>
+	
+	<section class="dark-wrapper">
+	
+		<div class="wrapper clearfix">
+			
+			<div class="two_thirds scroll-animate left">
+				<div id="message"></div>
+				<form method="post" action="sendemail.php" id="contactform">
+					<input type="text" name="name" id="name" placeholder="Name" />
+					<input type="text" name="email" id="email" placeholder="Email" />
+					<input type="text" name="website" id="website" placeholder="Phone Number" />
+					<textarea name="comments" id="comments" placeholder="Comments"></textarea>
+					<input type="submit" name="submit" value="Submit" />
+				</form>
+			</div>
+			
+			<div class="one_third last scroll-animate right">
+				<h5>Pledge Today!</h5>
+				<p>Hundreds have already pledged to do their part. Make a difference, one shower at a time. Become a part of this incredible cause today!</p>
+				<p class="margin-bottom-10"><i class="fa fa-map-marker fa-fixed-width"></i> Upland, CA</p>
+                <p class="margin-bottom-10"><i class="fa fa-globe fa-fixed-width"></i> <a href="#" style="color: #00aeef;">SkipShowersForBeef.com</a></p>
+			</div>
+			
+		</div>
+		
+	</section>
+	
+	<footer>
+			
+		<div class="wrapper centered">
+			<div class="social">
+				<a href="http://www.twitter.com/skipshowers" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/skipshowersforbeef" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.youtube.com/channel/UCZ9TCGGwK8V5UBCCBnKCkKQ/videos" target="_blank"><i class="fa fa-youtube-play"></i></a>
+			</div>
+			
+			<div class="clear"></div><!--CLEAR FLOATS-->
+		</div>
+		
+	</footer>
+	
+	<section class="small-padding dark-wrapper">
+			
+		<div class="wrapper">
+			<!-- <p class="centered">© 2013 Tides. All rights reserved. Theme by TommusRhodus.</p> -->
+			
+			<div class="clear"></div><!--CLEAR FLOATS-->
+		</div>
+		
+	</section>
+	
+	
+<!--LOAD SCRIPTS-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+<!-- <script type="text/javascript" src="js/video.js"></script> -->
+<script type="text/javascript" src="js/custom.js"></script>
+<script>
+    $(window).scroll(function(){
+
+        if ($(window).scrollTop() < 108) {
+            $(".logo-holder").css({"background-position": "-3px " + $(window).scrollTop() + "px"});
+            $(".logo-holder").css({"width": "136px"});
+            $("#selectnav").css({"padding-top": "30px"});
+        } else {
+            $(".logo-holder").css({"background-position": "-3px 97px"});
+            $(".logo-holder").css({"width": "110px"});
+            $("#selectnav").css({"padding-top": "20px"});
+        }
+        if ($(window).scrollTop() == 0) {
+            $(".logo-holder").css({"background-position": "-3px 7px"});
+        }
+    });
+    if ($(window).innerWidth() < 579) {
+        $('html').css('overflow-x', 'hidden');
+        $('.logo-holder').css('height', '97px');
+        $('.logo-holder').css('background-position', '3px 7px');
+        $('.logo-holder').css('margin-left', '-5px');
+    }
+</script>
+
+</body>
+</html>
